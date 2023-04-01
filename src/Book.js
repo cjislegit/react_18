@@ -9,15 +9,7 @@ const Book = () => {
         Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad
         Ones
       </h2>
-      <h4
-        style={{
-          color: '#617d98',
-          fontSize: '.75rem',
-          marginTop: '.5rem',
-        }}
-      >
-        James Clear
-      </h4>
+      <h4>James Clear</h4>
     </article>
   );
 };
