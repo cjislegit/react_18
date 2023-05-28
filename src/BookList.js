@@ -8,11 +8,16 @@ const BookList = () => {
   };
 
   return (
-    <section className='booklist'>
-      {books.map((book) => {
-        return <Book {...book} key={book.id} getBook={getBook} />;
-      })}
-    </section>
+    <>
+      <h1>Amazon Best Seller</h1>
+      <section className='booklist'>
+        {books.map((book, index) => {
+          return (
+            <Book {...book} key={book.id} getBook={getBook} number={index} />
+          );
+        })}
+      </section>
+    </>
   );
 };
 export default BookList;
